@@ -7,7 +7,13 @@ body{
      font-size:16px;
      line-height:1.5;
      overflow-x:hidden;
-     background-color:#eff0f4;
+    
+     background-image: linear-gradient( 
+        180deg
+         , #dad7dc 0%, #2b1c42 46%, #33322e 100%);
+        }
+}
+
  }
  *:not(i){
     font-family: 'Raleway', sans-serif;
@@ -90,6 +96,35 @@ body{
 }
 .hover-in-shadow:hover-after{
     box-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+}
+.section-title{
+  
+    padding:0 15px;
+    flex:0 0 100%;
+    max-width:100%;
+    text-align:center;
+    margin-bottom: 60px;
+}
+.section-title h2{
+    
+    display:inline-block;
+}
+.section-title h2:before{
+    content:attr(data-heading);
+    display:inline-block;
+    font-size:30px;
+    font-weight:700;
+    color:#000000;
+    text-transform: uppercase;
+    margin:0;
+
+}
+.section-title h2:before{
+    content:attr(data-heading);
+    display:block;
+    font-size: 16px;
+    font-weight:600;
+    color: #fb839e;
 }
  /*----------------------------------------------------------------
  header
@@ -279,4 +314,78 @@ home
     width:100%;
     border-radius:4%;
     border: 10px solid transparent;
+}
+/*-----------------------------
+about section ----------------*/
+.about-section{
+    
+    padding:80px 0 80px 0;
+    min-height:100vh;
+}
+.about-section .about-img{
+   
+    flex: 0 0 40%;
+    max-width:40%;
+    padding: 10px 15px;
+}
+.about-section .about-img .img-box {
+    padding:15px;
+    border-radius:4%;
+}
+.about-section .about-img .img-box  img{
+    width:100%;
+    border:10px solid transparent;
+    border-radius:4%;
+}
+.about-section .about-img .social-links{
+ 
+    margin-top:20px;
+    text-align: center;
+}
+.about-section .about-img .social-links a{
+ 
+  display:inline-block;
+  height:40px;
+  width: 40px;
+  font-size:16px;
+  text-align:center;
+  line-height:40px;
+  color:#666666;
+  margin:0 4px ;
+  border-radius:50%;
+  transition:all 0.3s ease;
+
+}
+.about-section .about-img .social-links a i{
+    line-height:40px;
+
+}
+.about-section .about-img .social-links a:after{
+    border-radius:50%
+    
+}
+.about-section .about-img .social-links a:hover{
+    color:#fb839e;
+}
+.about-section .about-info{
+    flex: 0 0 60%;
+    max-width:60%;
+    padding:0 15px;
+ 
+}
+.about-section .about-info p{
+    font-size: 18px;
+    line-height: 38px;
+    margin-bottom:15px;
+    color:#666666;
+  
+    margin-top: 10px;
+}
+.about-section .about-info span{
+    font-weight: 600;
+    
+    
+}
+.about-section .about-info .btn-1{
+    margin:30px 20px 0 0;
 }
