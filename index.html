@@ -6,19 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+  
     <title>Faisal Ahmed Portfolio</title>
 </head>
 <body>
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md fixed-top">
+        <div class="container">
+            <a href="#home-section" class="navbar-brand" title="LoopLab">LoopLab</a>
+            <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">        
+            <ul class="navbar-nav  ml-auto">
+                <li nav-item><a class="nav-link" href="#home-section" title="Home">Home</a></li>
+                <li nav-item><a class="nav-link" href="#about-section" title="About">About</a></li> 
+                <li nav-item><a class="nav-link" href="#portfolio-section" title="Portfolio">Portfolio</a></li>
+                <li nav-item><a class="nav-link" href="#blog-section" title="Blog">Blog</a></li>
+                <li nav-item><a class="nav-link" href="#contact-section" title="Contact">Contact</a></li>
+             </ul>
+        </div>
+    </div>
+    </nav>
     <!--header start-->
-    <header class="header">
+    <!-- <header class="header">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="logo">
                     <a href="index.html">Faisal Ahmed</a>
 
                 </div>
-                <div class="hamburger-btn outer-shadow hover-in-shadow">
+                <div hamburger-btn class="hamburger-btn outer-shadow hover-in-shadow ">
 <span></span>
                 </div>
 
@@ -26,39 +45,41 @@
 
         </div>
 
-    </header>
+    </header> -->
         <!--header end-->
          <!--nav start-->
 
 
-<nav class="nav-menu">
+<!-- <nav class="nav-menu">
     <div class="close-nav-menu">&times; </div>
 <div class="nav-menu-inner">
     <ul>
-        <li><a href="#" class="inner-shadow active">home </a> </li>
-        <li><a href="#" class="outer-shadow hover-in-shadow ">about </a> </li>
-        <li><a href="#" class="outer-shadow hover-in-shadow ">blog</a> </li>
-        <li><a href="#" class="outer-shadow hover-in-shadow ">portfolio</a> </li>
-        <li><a href="#" class="outer-shadow hover-in-shadow ">contact</a> </li>
+        <li><a href="index.html" class="link-item inner-shadow active">home </a> </li>
+        <li><a href="#about" class="link-item outer-shadow hover-in-shadow ">about </a> </li>
+        <li><a href="#portolio" class="link-item outer-shadow hover-in-shadow ">portfolio</a> </li>
+        <li><a href="#blog" class="link-item outer-shadow hover-in-shadow ">blog</a> </li>
+        <li><a href="#contact" class="link-item outer-shadow hover-in-shadow ">contact</a> </li>
+      
 
 </ul>
 
 </div>
-</nav>
+</nav> -->
+
 
           <!--nav end-->
                     <!--home start -->
-<section class="home-section section">
-    <div class="container">
-        <div class="row full-screen align-items-center">
-<div class="home-text">
+<section  id="home-section" class="home-section section active ">
+    <div class="container ">
+        <div class="row full-screen align-items-center ">
+<div class="home-text  ">
     <p>Hello</p>
     <h2>I'm Faisal Ahmed</h2>
     <h1> Web Developer</h1>
     <a style=" color:#fb839e;" href="https://drive.google.com/uc?id=1ReBoiX7pLV4g2lFNYdBCeAiN5kyGM1it&export=download" class="btn-1 outer-shadow hover-in-shadow">Resume</a>
 
-</div>
-<div class="home-img">
+</div >
+<div class="home-img ">
     <div class="img-box inner-shadow">
         <img src="img/profile.jpg" alt="" class="outer-shadow">
 
@@ -72,7 +93,7 @@
 </section>
    <!--home  end-->
 <!--about  start-->
-<section class="about-section section">
+<section id="about-section" class="about-section section ">
     <div class="container">
         
 <div class="row">
@@ -111,7 +132,7 @@
 </section>
  <!--about  end-->
   <!--portfolio start  start-->
-  <section class="portfolio-section section">
+  <section id="portfolio-section"class="portfolio-section section">
       <div class="container">
 <div class="row">
     <div class="section-title">
@@ -125,7 +146,7 @@
         <div class="portfolio-item-inner outer-shadow">
             <div class="portfolio-item-img">
                 <img src="img/project.jpg" alt="">
-                <span class="view-project"></span>
+                <span class="view-project">ImageBay</span>
             </div>
             <p class="portfolio-item-title">ImageBay -Photography service</p>
             <a style="color:#fb839e;" href=" https://image-bay.web.app/" target="_blank">Live</a>
@@ -205,9 +226,76 @@
    <!--portfolio  end-->
 
 
+   <!--blog start-->
+   <section id="blog-section"class="blog-section section">
+    <div class="container">
+<div class="row">
+  <div class="section-title">
+      <h2 data-heading="blog">Some of my blogs</h2>
+
+</div>
+
+</div>
+<div class="row blog-items">
+  <div class="blog-item">
+      <div class="blog-item-inner outer-shadow">
+          <div class="portfolio-item-img">
+              <img src="img/html.png" alt="">
+              <span class="view-project"> </span>
+          </div>
+          <p class="blog-item-title">100 HTML Interview Question</p>
+          <a  href="#" target="_blank">Work On Progress</a>
+          
+
+
+      </div>
+
+  </div>
+  <div class="blog-item">
+    <div class="blog-item-inner outer-shadow">
+        <div class="portfolio-item-img">
+            <img src="img/javascript.jpg" alt="">
+            <span class="view-project"> </span>
+        </div>
+        <p class="blog-item-title">100 Javascript Interview Question</p>
+        <a  href="#" target="_blank">Work On Progress</a>
+        
+
+
+    </div>
+
+</div>
+<div class="blog-item">
+    <div class="blog-item-inner outer-shadow">
+        <div class="portfolio-item-img">
+            <img src="img/css.png" alt="">
+            <span class="view-project"> </span>
+        </div>
+        <p class="blog-item-title">100 CSS Interview Question</p>
+        <a  href="#" target="_blank">Work On Progress</a>
+        
+
+
+    </div>
+
+</div>
+ 
+  
+  
+ 
+
+
+</div>
+    </div>
+
+</section>
+
+   <!--blog end-->
+
+
 
      <!--contact start  -->
-<section class="contact-section section">
+<section id="contact-section" class="contact-section section">
     <div class="container">
         <div class="row">
             <div class="section-title">
@@ -288,7 +376,7 @@
 
 </section>
  
-        <!--contact end  -->
+     
 
 
 
@@ -296,6 +384,9 @@
 
 
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
 </body>
 </html>

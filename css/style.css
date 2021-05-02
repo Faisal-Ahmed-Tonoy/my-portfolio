@@ -445,6 +445,67 @@ about section ----------------*/
     color:#666666;
     text-transform: capitalize;
 }
+
+
+
+/*----------------------------------------------------------------
+blog--------------*/
+
+.blog-section {
+ 
+    padding:80px 0 80px;
+    min-height: 100vh;
+}
+.blog-section .blog-item{
+    flex: 0 0 33.33%;
+    max-width:33.33%;
+    padding:15px;
+    display:flex;
+    flex-wrap: wrap;
+
+}
+.blog-section  .blog-item-inner{
+    padding:15px;
+    border-radius:5px;
+    cursor:pointer;
+    width:100%;
+}
+.blog-section .blog-item-img img{
+    width: 100%;
+   border-radius:5px;
+   transition:all 0.3s ease;
+}
+.blog-section .blog-item-inner:hover .blog-item-img img{
+    transform: translateY(-16px);
+}
+.blog-section .blog-item-img .view-project{
+      text-transform:capitalize;
+      font-size:16px;
+      font-weight:500;
+      color:#fb839e;
+      transition:all 0.3s ease;
+      position:absolute;
+      left:0;
+      bottom:-4px;
+      transform:translateY(-5px);
+      z-index:-1;
+      opacity:0;
+}
+.blog-section .blog-item-inner:hover .view-project  {
+    transform: translateY(0px);
+    opacity:1;
+
+}
+.blog-section .blog-item-details{
+    display: none;
+}
+.blog-section .blog-item-inner p{
+    font-size:16px;
+    margin:10px 0 0;
+    color:#666666;
+    text-transform: capitalize;
+}
+ 
 /*----------------------------------------------------------------
 contact section--*/
 .contact-section{
@@ -529,4 +590,41 @@ contact section--*/
     max-width:100%;
     text-align: right;
     padding:0 15px;
+}
+.nav-menu.open{
+    visibility:visible;
+    opacity:1;
+    z-index:999;
+    transition:all 0.3s ease-in;
+
+}
+@media (max-width:767px){
+    .home-section .home-text,
+    .home-section .home-img{
+        flex:0 0 50%;
+        max-width:50%;
+    }
+    .home-section .home-text{
+        order:2;
+    }
+    .home-section .home-text{
+        text-align:center;
+    }
+    .home-section .full-screen{
+        padding:100px 0;
+
+    }.home-section .home-img .img-box{
+        margin: bottom 40px;
+        max-width: 350px;
+    }
+}
+@media (max-width:574px){
+    .home-section .home-img .img-box{
+        width:10000px;
+
+    }
+.home-section .home-text {
+    margin-top:800px;
+    margin-left:-70px;
+}
 }
