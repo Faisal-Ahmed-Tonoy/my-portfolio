@@ -598,33 +598,9 @@ contact section--*/
     transition:all 0.3s ease-in;
 
 }
-@media (max-width:767px){
-    .home-section .home-text,
-    .home-section .home-img{
-        flex:0 0 50%;
-        max-width:50%;
-    }
-    .home-section .home-text{
-        order:2;
-    }
-    .home-section .home-text{
-        text-align:center;
-    }
-    .home-section .full-screen{
-        padding:100px 0;
-
-    }.home-section .home-img .img-box{
-        margin: bottom 40px;
-        max-width: 350px;
-    }
-}
-@media (max-width:574px){
-    .home-section .home-img .img-box{
-        width:10000px;
+@media(max-width:320){
+  .home-section  .home-text h3 {
+        width: 100%;
 
     }
-.home-section .home-text {
-    margin-top:800px;
-    margin-left:-70px;
-}
 }
