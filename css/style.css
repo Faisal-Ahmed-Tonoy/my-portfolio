@@ -7,13 +7,11 @@ body{
      font-size:16px;
      line-height:1.5;
      overflow-x:hidden;
-     background-color:rgb(17, 15, 15);
+     background-color:#eff0f4
     
-     /* background-image: linear-gradient( 
-        180deg
-         , #dad7dc 0%, #2b1c42 46%, #33322e 100%); */
+     
    
-}
+
 
  }
  *:not(i){
@@ -78,6 +76,7 @@ body{
      border-radius:30px;
      transition:all 0.3s ease;
      display:inline-block;
+     border:none;
  }
  .btn-1:after{
      border-radius:30px;
@@ -303,6 +302,7 @@ home
 
 
 .home-section .home-img .img-box{
+    width: 250px;
  
     max-width:450px;
     display:block;
@@ -444,4 +444,89 @@ about section ----------------*/
     margin:10px 0 0;
     color:#666666;
     text-transform: capitalize;
+}
+/*----------------------------------------------------------------
+contact section--*/
+.contact-section{
+    padding:80px 0 80px;
+    min-height:100vh;
+}
+.contact-section .contact-item{
+    flex: 0  0 33.33%;
+    max-width:33.33%;
+    padding:0 15px;
+    display: flex;
+}
+.contact-section .contact-item-inner{
+    padding:30px 15px;
+    text-align:center;
+    border-radius:5px;
+    width:100%;
+}
+.contact-section .contact-item-inner i{
+    font-size:25px;
+}
+.contact-section .contact-item-inner span{
+    display:block;
+    font-size:16px;
+    font-weight:600;
+    margin:15px 0 10px;
+    text-transform: capitalize;
+
+}
+.contact-section .contact-item-inner p{
+    font-size: 16px;
+    line-height:26px;
+    margin:0px;
+    word-break: break-word;
+
+}
+.contact-section .contact-form{
+ 
+    flex:0 0 100%;
+    max-width: 100%;
+    margin-top:50px;
+
+}
+.contact-section .w-50{
+ 
+    padding: 0 15px;
+    flex: 0 0 50%;
+    max-width:50%;
+}
+
+.contact-section .w-50{
+    padding:0 15px;
+    flex :0 0 50%;
+    max-width:50%
+}
+.contact-section .input-group{
+    margin:0 0 25px;
+    transition: all 0.3s ease;
+    border-radius:30px;
+}
+.contact-section .input-group:after{
+    border-radius:30px;
+}
+.contact-section .input-group .input-control{
+    height:45px;
+    display:block;
+    width:100%;
+    border-radius:30px;
+    border:none;
+    background-color:transparent;
+    font-size:16px;
+    padding: 0 15px;
+}
+  #textarea  {
+    height:184px;
+    padding-top:15px;
+    resize:none;
+    
+}
+.contact-section .submit-btn{
+    flex:0 0 100%;
+    max-width:100%;
+    text-align: right;
+    padding:0 15px;
 }
