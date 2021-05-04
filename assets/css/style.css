@@ -372,7 +372,7 @@ section .container {
   margin: -15px 0 15px 0;
   font-size: 36px;
   font-weight: 700;
-  text-transform: uppercase;
+   
   font-family: "Poppins", sans-serif;
   color: #fff;
 }
@@ -847,7 +847,7 @@ section .container {
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #ffffff;
   font-size: 14px;
-  text-transform: uppercase;
+ 
   padding: 0;
   margin: 0;
 }
