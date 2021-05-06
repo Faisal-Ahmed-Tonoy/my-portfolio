@@ -10,16 +10,16 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #040404;
+  background-color: #111111;
   color: #fff;
   position: relative;
-  background: transparent;
+  /* background: transparent; */
 }
 
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background:  #111111 url("../img/bg.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -855,10 +855,11 @@ section .container {
 .portfolio .portfolio-wrap .portfolio-links {
   text-align: center;
   z-index: 4;
+   
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #fff;
+  color: #ffffff;
   margin: 0 2px;
   font-size: 28px;
   display: inline-block;
